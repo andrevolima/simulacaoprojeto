@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Campeonatos</h1>
+
+    <!-- Formulário para adicionar um novo campeonato -->
+    <form id="add-campeonato-form" action="postindex" method="post">
+        <input type="text" id="nome-campeonato" placeholder="Nome do Campeonato" required>
+        <input type="password" id="senha-campeonato" placeholder="Senha do Campeonato" required> 
+        <button type="submit">Adicionar Campeonato</button>
+    </form>
+
+    <h1>Campeonatos existentes</h1>
+
+    <ul id="campeonatos-list"></ul>
+
+   
+    <form id="acessar-campeonato-form">
+        <input type="text" id="nome-campeonato" placeholder="Nome do Campeonato" required>
+        <input type="password" id="senha-acessar-campeonato" placeholder="Senha do Campeonato" required>
+        <button type="submit">Acessar Campeonato</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

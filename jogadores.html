@@ -1,0 +1,23 @@
+<!-- jogadores.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jogadores</h1>
+
+    <ul id="jogadores-list"></ul>
+   
+    <form id="add-jogador-form">
+        <input type="text" id="nome-jogador" placeholder="Nome do Jogador" required>
+        <input type="number" id="idade-jogador" placeholder="Idade do Jogador" required> 
+        <button type="submit">Adicionar Jogador</button>
+    </form>
+    
+    <script src="{% static 'jogadores_script.js' %}"></script>
+</body>
+</html>

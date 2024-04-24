@@ -1,0 +1,27 @@
+<!-- times.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Times</h1>
+
+    <a href="index.html">Voltar para os Campeonatos</a>
+
+
+    <!-- Formulário para adicionar um novo time -->
+    <form id="add-time-form">
+        <input type="text" id="nome-time" placeholder="Nome do Time" required>
+        <input type="password" id="senha-time" placeholder="Senha do Time" required> 
+        <button type="submit">Adicionar Time</button>
+    </form>
+
+    <ul id="times-list"></ul>
+    
+    <script src="{% static 'times_script.js' %}"></script>
+</body>
+</html>
